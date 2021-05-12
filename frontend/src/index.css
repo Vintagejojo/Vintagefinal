@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #47AEFF; 
+    --color-secondary: #EC469C;
+    --color-additional: #EBF6FF;
+    /* font color below */
+    --fontcolor_primary: #10040C;
+    --fontcolor_secondary: #210818;
+    --fontcolor_additional: #c3dcf0;
+    /* Other color variants below */
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: azure;
+}
+
+img {
+    width: 100;
+    object-fit: contain;
+}
