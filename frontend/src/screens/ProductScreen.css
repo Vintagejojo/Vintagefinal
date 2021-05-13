@@ -59,3 +59,46 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+
+.right_deets p > button {
+    grid-column: 1/-1;
+    padding: 10px 16px;
+    background-color: var(--color-secondary);
+    color: var(--color-additional);
+    border: 1px solid var(--fontcolor_primary);
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.right_deets select {
+    padding: 10px;
+}
+
+@media (max-width:960px) {
+    .productscreen {
+        flex-direction: column;
+
+    }
+    .p_screenleft {
+        flex-direction: column;
+        flex: 1;
+    }
+
+    .left_pic {
+        flex: 1;
+    }
+
+    .left_deets {
+        flex: 1;
+    } 
+
+    .p_screenright {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .right_deets {
+        width: 100%;
+        margin: 0;
+    }
+}
