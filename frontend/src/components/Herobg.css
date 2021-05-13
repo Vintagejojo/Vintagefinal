@@ -1,0 +1,5 @@
+.hero_background {
+    z-index: -1;
+    opacity: .9;
+    height: 100vh;
+}
