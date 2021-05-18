@@ -1,0 +1,24 @@
+.footer_container {
+    height: auto;
+    width: auto;
+    display: flex;
+}
+
+.footer_mods {
+    background: #465394;
+    display: flex;
+}
+
+.footer_columnleft {
+    height: 500px;
+    width: auto;
+    flex: 0.5;
+    padding: 3rem;
+}
+
+.footer_columnright {
+    flex: 0.5;
+    height: 500px;
+    width: auto;
+    padding: 3rem;
+}

@@ -13,6 +13,7 @@ import Navbar from './components/Navbar';
 import Backdecor from './components/Backdecor';
 import Sidebar from './components/Sidebar';
 import Herobg from './components/Herobg';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
             <Route exact path="/cart" component={CartScreen}/>
           </Switch>
         </main>
+        <Footer />
         </div>
         
     </Router>
@@ -42,5 +44,6 @@ function App() {
     
   );
 }
+
 
 export default App;

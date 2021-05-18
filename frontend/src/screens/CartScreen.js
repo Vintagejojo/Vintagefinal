@@ -24,3 +24,4 @@ export const CartScreen = () => {
 }
 
 export default CartScreen;
+
