@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&family=Press+Start+2P&family=Shadows+Into+Light&family=Slabo+27px&display=swap");
+
+
+
+.date_header {
+    margin: 3rem auto;
+}
+
+h3.article_title {
+    margin: 3rem auto;
+    font-weight: 700;
+    color: #0d0c0c86;
+}
+
+h4.date_header {
+    color:#0d0c0c46;
+    font-weight: 600;
+}
+
+h4.date_header:hover {
+    background: var(--color-secondary);
+    color: var(--color-additional);
+}
+
+p.article_text {
+    padding-bottom: 3rem;
+    font-size: 1.2rem;
+    font-family: 'Slabo 27px', serif;
+    border-bottom-width: 1px;
+    text-align: justify;
+}
+
+h3.article_title:hover {
+    color: var(--color-primary);
+}
+
+.artice_border {
+    border-bottom: 2px;
+}
+
+hr.article_bottom {
+        border-top: 1.5px dotted #1d288a; 
+} 

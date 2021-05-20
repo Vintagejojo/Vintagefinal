@@ -8,7 +8,8 @@ class mastertableDao {
 
 findAll(req, res) {
     // let sql = "SELECT * FROM consoles where deleted_at is NULL"; // simple statement unless you have a lot of joins.
-    let sql = "SELECT * FROM console_table ct JOIN console_synopsis cs ON ct.game_id = cs.game_id";
+    let sql = "SELECT * FROM console_table ct JOIN console_synopsis cs ON ct.game_id = cs.game_id JOIN rarity_table rt ON ct.game_id = rt.game_id";
+    // let sql = "SELECT * FROM console_table ct JOIN console_synopsis cs ON ct.game_id = cs.game_id";
 
     this.pool.query(sql, function(err, rows) {
         if (err) {
@@ -21,9 +22,12 @@ findAll(req, res) {
         res.json(rows);
     });
 }
-findID(req, res, id) {
+findbyID(req, res, id) {
     // let sql = "SELECT * FROM movies where deleted_at is NULL"; // simple statement unless you have a lot of joins.
-    let sql = "SELECT * FROM console_table where id =?";
+    let sql = `SELECT * 
+    FROM console_table ct
+    JOIN console_synopsis cs ON ct.game_id = cs.game_id JOIN rarity_table rt ON ct.game_id = rt.game_id 
+    WHERE ct.game_id =?`;
     this.pool.query(sql, [id], function(err, rows) {
         if (err) {
             res.json({

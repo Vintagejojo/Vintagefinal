@@ -27,6 +27,12 @@
 .sidbar_links > li {
     display: flex;
     align-items: center;
+    list-style-type: none;
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
 }
 
 .sidebar_links > li > a {

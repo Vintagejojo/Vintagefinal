@@ -1,44 +1,37 @@
-import React from 'react'
-import "./Footer.css"
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
-    return (
-        <div className="footer_container">
-            <div className="footer_main">
-                <div className="container">
-                    <div className="row">
-                        {/* Column1 */}
-                        <div className="column">
-                            <h4>this is a column</h4>
-                            <ul className="col_list">
-                                <li>1</li>
-                                <li>3</li>
-                                <li>5</li>
-                            </ul>
-                        </div>
-                        {/* Column2 */}
-                        <div className="column">
-                            <h4>this is a column</h4>
-                            <ul className="col_list">
-                                <li>1</li>
-                                <li>3</li>
-                                <li>5</li>
-                            </ul>
-                        </div>
-                        {/* Column3 */}
-                        <div className="column">
-                            <h4>this is a column</h4>
-                            <ul className="col_list">
-                                <li>1</li>
-                                <li>3</li>
-                                <li>5</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  return (
+    <footer className="footer">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-sm-12 col-md-6">
+            <h5 className="footer_greeting">Got a Minute?</h5>
+            <p className="footer_greeting_text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+              autem, facilis consequatur officia corporis a labore facere
+              voluptatem, natus repudiandae possimus. Excepturi ea adipisci ut
+              et culpa neque vitae vel?
+            </p>
+          </div>
+          <div className="col-xs-6 col-md-3"></div>
+          <div className="col-xs-6 col-md-3 flex-column">
+              <a className="icon_mods" href="http://scanfcode.com/contribute-at-scanfcode/">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a className="icon_mods" href="http://scanfcode.com/contribute-at-scanfcode/">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a className="icon_mods" href="http://scanfcode.com/contribute-at-scanfcode/">
+                <i class="fab fa-facebook"></i>
+              </a>
+              
+          </div>
         </div>
-    )
-}
+      </div>
+    </footer>
+  );
+};
 
-export default Footer
+export default Footer;

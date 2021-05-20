@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Press+Start+2P&display=swap');
 .product {
     width: 300px;
     padding: 1rem;
@@ -10,22 +11,37 @@
     justify-content: space-between;
 }
 
+p.info {
+    font-size: 1rem;
+}
+
 .product > img {
-    height: 150px;
+    height: 230px;
     width: auto;
     border-radius: 7px;
 }
 
+.product > img:hover {
+    height: 300px;
+    width: auto;
+}
+
 .product_deets > p {
     margin-bottom: 10px;
+    /* font-family: 'Press Start 2P', cursive; */
+    color: #171b33de;
+    
 }
 
 .product_price {
     font-weight: bolder;
+    font-family: 'Potta One', cursive;
 }
 
 .description {
     font-size: 0.8rem;
+    font-family: 'Potta One', cursive;
+    color: var(--color-primary);
 }
 
 
@@ -34,11 +50,12 @@
     width: 100%;
     text-decoration: none;
     text-align: center;
-    color: var(--fontcolor_secondary);
-    background-color: #eba7cc;
+    color: var(--fontcolor_additional);
+    background-color: #3d44bab3;
     padding: 8px 16px;
     border: 2px dashed #7274ec;
     font-size: 1rem;
+    font-family: 'Press Start 2P', cursive;
 }
 /* make a not here to find out what info name means */
 

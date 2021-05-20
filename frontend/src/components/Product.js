@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import './Product.css';
 import {Link} from 'react-router-dom';
-import commodore from '../assets/commodore64.jpg';
+// import commodore from '../assets/commodore64.jpg';
 
 const Product = ({product, ...rest}) => {
     return (
@@ -17,13 +17,13 @@ const Product = ({product, ...rest}) => {
                  Color: {product.console_color}
                 </p>
                 <p className="rarity_level">
-                    Rarity Level:
+                    Rarity Level: {product.rarity_level}
                     {/* description */}
                 </p>
                 <p className="product_price">
                 {product.console_price}
                 </p>
-                <Link to={`/product/${1111}`} className="info_button">
+                <Link to={`/product/${product.game_id}`} className="info_button">
                     view
                 </Link>
             </div>

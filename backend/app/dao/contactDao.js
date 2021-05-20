@@ -37,10 +37,12 @@ findID(req, res, id) {
 
 create(req, res) {
     // let sql idk;
+    console.log(req.body,'req.body 1')
     let fields = Object.keys(req.body);
     // fields[ fields.indexOf('condition')] = 'condition'; 
     let values = Object.values(req.body);
     //Required Min Data
+    console.log(req.body,'req.body')
     if (!req.body.first_name || !req.body.last_name || !req.body.email_address || !req.body.phone_number) {
         res.json({
             error: true,
