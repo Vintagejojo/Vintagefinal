@@ -3,9 +3,14 @@ import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { AppContext } from "../AppContext";
 
+//  Given an object, using the destructuring syntax you can extract
+//  just some values and put them into named variables:
+
+
+
 
 const Navbar = ({ click }) => {
-  //array  of objs
+  //array  of objects 
   const { cart } = useContext(AppContext);
 
   console.log(cart);

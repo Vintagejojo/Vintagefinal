@@ -13,9 +13,9 @@
 
 .nav_logo h2 {
   color: var(--fontcolor_additional);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   cursor: pointer;
-  font-family: "Potta One", cursive;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .nav_links {
@@ -27,6 +27,14 @@
 .nav_links > li {
   padding-left: 3rem;
   font-family: 'Slabo 27px', serif;
+  font-weight: 700;
+}
+
+.nav_links > li:hover {
+  /* color: var(--color-primary); */
+  text-decoration: underline;
+  color: cornflowerblue;
+  
 }
 
 .nav_links > li > a {

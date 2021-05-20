@@ -13,6 +13,8 @@
 
 p.info {
     font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1.5vh;
 }
 
 .product > img {
@@ -33,9 +35,23 @@ p.info {
     
 }
 
+.product_color {
+    font-weight: 600;
+}
 .product_price {
     font-weight: bolder;
     font-family: 'Potta One', cursive;
+}
+
+
+.rarity_level {
+    font-weight: 600;
+}
+
+.rarity_level:hover {
+    font-weight: 600;
+    color: goldenrod;
+    cursor:crosshair;
 }
 
 .description {
@@ -56,6 +72,7 @@ p.info {
     border: 2px dashed #7274ec;
     font-size: 1rem;
     font-family: 'Press Start 2P', cursive;
+    cursor: crosshair;
 }
 /* make a not here to find out what info name means */
 

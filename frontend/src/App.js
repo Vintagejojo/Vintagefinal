@@ -24,9 +24,9 @@ function App() {
     <Router>
       <Navbar click={() => setSideToggle(!sideToggle)} />
       <Sidebar show={sideToggle} click={() => setSideToggle(false)} />
-      <Backdecor show={sideToggle} click={() => setSideToggle(!sideToggle)} />
+      <Backdecor show={sideToggle} click={() => setSideToggle(false)} />
       <div className="wrapper">
-        <Herobg />
+        <Herobg click={() => setSideToggle(false)} />
         <main>
           <Switch>
             <Route exact path="/about" component={About} />
