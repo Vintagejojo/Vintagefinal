@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&family=Press+Start+2P&family=Shadows+Into+Light&family=Slabo+27px&display=swap');
+
+.left_column {
+    float: left;
+    width: 100%;
+    padding: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 475px;
+    margin: 30px;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    background-color: #15dbc1;
+    line-height: 2;
+}
+
+.right_column {
+    float: left;
+    width: 100%;
+    padding: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 475px;
+    margin: 30px;
+    margin-right: 30px;
+    margin-bottom: 70px;
+    background: url(../assets/anonpicture.jpg);
+    background-size: cover;
+    line-height: 2;
+}
+
+.about_header {
+    display: block;
+    font-size: 1.5rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.about_text {
+    text-align: justify;
+    font-family: 'Potta One', cursive;
+    font-weight: 400;
+    font-size: 1.5vw ;
+}
+
+
+@media (max-width: 1028px) {
+    .product {
+        width: 300px;
+    }
+}
+
+@media (max-width: 950px) {
+    .product {
+        width: 400px;
+    }
+}
+
+@media (max-width: 830px) {
+    .product {
+        width: 350px;
+    }
+}
+
+@media (max-width: 700px) {
+    .product {
+        width: 290px;
+    }
+}
+
+@media (max-width: 630px) {
+    .product {
+        width: 400px;
+    }
+}
+
+@media (max-width: 400px) {
+    .product {
+        width: 300px;
+    }
+}

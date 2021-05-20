@@ -15,19 +15,21 @@ import Herobg from "./components/Herobg";
 import Footer from "./components/Footer";
 import Contactform from "./components/Contactform";
 import Blog from "./components/Blog";
+import About from "./components/About";
 
 function App() {
   const [sideToggle, setSideToggle] = useState(false);
 
   return (
     <Router>
-      <Navbar click={() => setSideToggle(true)} />
+      <Navbar click={() => setSideToggle(!sideToggle)} />
       <Sidebar show={sideToggle} click={() => setSideToggle(false)} />
-      <Backdecor show={sideToggle} click={() => setSideToggle(false)} />
+      <Backdecor show={sideToggle} click={() => setSideToggle(!sideToggle)} />
       <div className="wrapper">
         <Herobg />
         <main>
           <Switch>
+            <Route exact path="/about" component={About} />
             <Route exact path="/" component={HomeScreen} />
             <Route exact path="/product/:id" component={ProductScreen} />
             <Route exact path="/cart" component={CartScreen} />

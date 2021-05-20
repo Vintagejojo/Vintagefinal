@@ -1,9 +1,11 @@
-.footer {
+footer.footer {
     background-color:  var(--fontcolor_secondary);
     padding: 4rem 0 2rem 0;
     color: #fff;
 	display: flex;
     flex-flow: column;
+    /* position: fixed; */
+    bottom: 0;
 }
 
 .footer_container {
@@ -25,5 +27,14 @@
     float: left;
     border-radius: 100%;
     font-size: 50px;
+}
+
+hr.article_bottom {
+    border-top: 1.5px dotted #1d288a; 
+} 
+
+
+.copyright_text {
+    margin: 0;
 }
 

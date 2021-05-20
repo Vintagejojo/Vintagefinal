@@ -18,10 +18,11 @@
     transform: translateX(0);
 }
 
-.sidbar_links {
+.sidebar_links {
     display: flex;
     flex-direction: column;
     list-style: none;
+    padding: 0;
 }
 
 .sidbar_links > li {

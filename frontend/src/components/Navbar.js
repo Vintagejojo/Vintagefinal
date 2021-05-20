@@ -27,14 +27,7 @@ const Navbar = ({ click }) => {
             <p className="nav_text_mods">Blog</p>
           </Link>
         </li>
-        <li>
-          <Link to="/cart" className="cart_link">
-            <i className="fas fa-shopping-cart"></i>
-            <span>
-              <span className="cartlogo_v">{cart.length}</span>
-            </span>
-          </Link>
-        </li>
+
         <li>
           <Link to="/">
             <p className="nav_text_mods">Home</p>
@@ -43,6 +36,14 @@ const Navbar = ({ click }) => {
         <li>
           <Link to="/contactus">
             <p className="nav_text_mods">Contact Us</p>
+          </Link>
+        </li>
+        <li>
+          <Link to="/cart" className="cart_link">
+            <i className="fas fa-shopping-cart"></i>
+            <span>
+              <span className="cartlogo_v">{cart.length}</span>
+            </span>
           </Link>
         </li>
       </ul>
