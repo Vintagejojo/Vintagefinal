@@ -21,7 +21,7 @@ const Product = ({product, ...rest}) => {
                     {/* description */}
                 </p>
                 <p className="product_price">
-                {product.console_price}
+                Price: ${product.price} .99
                 </p>
                 <Link to={`/product/${product.game_id}`} className="info_button">
                     view
